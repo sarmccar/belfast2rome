@@ -47,7 +47,7 @@ function Navbar() {
               <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
                 {pages.map((page) => (
                   <div key={page.title} className={classes.navLinks}>
-                    <Link to={`/${page.link}`} className={classes.linkText}>
+                    <Link to={page.link} className={classes.linkText}>
                       {page.title}
                     </Link>
                   </div>

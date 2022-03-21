@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, CardActions, CardContent, CardMedia, Button, Typography, makeStyles } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import { Card, CardActions, CardContent, CardMedia, Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = (makeStyles((theme) => ({
     cardForm: {
-        borderRadius: 10,
+        borderRadius: 56,
         minHeight: 600,
     },
     typography: {
@@ -15,18 +16,32 @@ const useStyles = (makeStyles((theme) => ({
     actions: {
         justifyContent: 'center',
         display: 'flex',
+        paddingBottom: 20,
+    },
+    link: {
+        backgroundColor: 'white',
+        borderRadius: 4,
+        paddingLeft: 20,
+        paddingRight: 20,
+        paddingTop: 5,
+        paddingBottom: 5,
+        textDecoration: 'none',
+    },
+    button: {
+        fontSize: 10,
+        color: '#2D3353',
     },
 })));
 
 const InfoCard = ({ card }) => {
     const classes = useStyles();
-    console.log(card.image);
+
     return (
         <React.Fragment>
-            <Card sx={{ maxWidth: 145 }} className={classes.cardForm}  elevation={10}>
+            <Card sx={{ maxWidth: 145 }} className={classes.cardForm}  elevation={20}>
                 <CardMedia
                     component="img"
-                    height="480"
+                    height="550"
                     image={card.image}
                     alt={card.title}
                 />
@@ -39,7 +54,9 @@ const InfoCard = ({ card }) => {
                     </Typography>
                 </CardContent>
                 <CardActions className={classes.actions} style={{ backgroundColor: card.colour }}>
-                    <Button size="small">Learn More</Button>
+                    <Link to={card.link} className={classes.link}>
+                        <Typography className={classes.button}>Learn More</Typography>
+                    </Link>
                 </CardActions>
             </Card>
         </React.Fragment>

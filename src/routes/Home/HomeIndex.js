@@ -1,12 +1,22 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
+import { Grid, makeStyles } from '@material-ui/core';
 import InfoCard from '../../components/InfoCard';
 import './hero.css';
 import pages from '../../config/pages'
 import title from '../../config/title';
 
+const useStyles = makeStyles((theme) => ({
+    gridItem: {
+        paddingLeft: 65,
+        paddingTop:50,
+        paddingRight:65,
+        justifyContent: 'center'
+    },
+  }));
+
 const HomeIndex = () => {
-    console.log(pages);
+    const classes = useStyles();
+
     return (
         <React.Fragment>
             <div class="parallax" />
@@ -20,7 +30,7 @@ const HomeIndex = () => {
                     {pages.map(page =>
                         <React.Fragment>
                             {page.isCard && (
-                                <Grid key={page.title} item xs={6} style={{ paddingLeft: 65, paddingTop:50, paddingRight:65, justifyContent: 'center' }}>
+                                <Grid key={page.title} item xs={6} className={classes.gridItem}>
                                     <InfoCard card={page} />
                                 </Grid>
                             )}
