@@ -36,9 +36,9 @@ function Navbar() {
         <CssBaseline />
           <Toolbar>
               <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                <Link to="/Home" className="navbar-logo">
+                <Link to="/" className="navbar-logo">
                   <img 
-                    alt="" 
+                    alt="topLogo" 
                     className={classes.logo} 
                     src={Logo} 
                   />

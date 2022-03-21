@@ -5,10 +5,7 @@ import { Card, CardActions, CardContent, CardMedia, Button, Typography, makeStyl
 const useStyles = (makeStyles((theme) => ({
     cardForm: {
         borderRadius: 10,
-        // maxWidth: 500,
-        // height: 500,
-        // position: 'absolute',
-        // padding: 10,
+        minHeight: 600,
     },
     typography: {
         color: 'white',
@@ -29,29 +26,27 @@ const InfoCard = ({ card }) => {
             <Card sx={{ maxWidth: 145 }} className={classes.cardForm}  elevation={10}>
                 <CardMedia
                     component="img"
-                    height="350"
+                    height="480"
                     image={card.image}
                     alt={card.title}
                 />
-                {/* <div style={{ backgroundColor: card.colour }}> */}
-                    <CardContent style={{ backgroundColor: card.colour }}>
-                        <Typography gutterBottom variant="h5" className={classes.typography}>
-                            {card.title}
-                        </Typography>
-                        <Typography variant="body2" className={classes.typography}>
-                            {card.description}
-                        </Typography>
-                    </CardContent>
-                    <CardActions className={classes.actions} style={{ backgroundColor: card.colour }}>
-                        <Button size="small">Learn More</Button>
-                    </CardActions>
-                {/* </div> */}
+                <CardContent style={{ backgroundColor: card.colour }}>
+                    <Typography gutterBottom variant="h5" className={classes.typography}>
+                        {card.title}
+                    </Typography>
+                    <Typography variant="body2" className={classes.typography}>
+                        {card.description}
+                    </Typography>
+                </CardContent>
+                <CardActions className={classes.actions} style={{ backgroundColor: card.colour }}>
+                    <Button size="small">Learn More</Button>
+                </CardActions>
             </Card>
         </React.Fragment>
     )
 }
 
-InfoCard.prototypes ={
+InfoCard.propTypes ={
     card: PropTypes.array,
 };
 export default InfoCard

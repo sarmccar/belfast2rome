@@ -1,4 +1,4 @@
-import jack from '../images/jack.jpg';
+import jack from '../images/jack1.jpg';
 import boatInternal from '../images/boat_internal.png';
 import route1 from '../images/route1.png';
 

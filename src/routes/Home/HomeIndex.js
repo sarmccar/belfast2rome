@@ -1,8 +1,9 @@
 import React from 'react';
-import { Grid, Box } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import InfoCard from '../../components/InfoCard';
 import './hero.css';
 import pages from '../../config/pages'
+import title from '../../config/title';
 
 const HomeIndex = () => {
     console.log(pages);
@@ -10,16 +11,16 @@ const HomeIndex = () => {
         <React.Fragment>
             <div class="parallax" />
             <div class="top-caption">
-                <span>We will attempt to do something that has never been done before...</span>
+                <span>{title.topTitle}</span>
             </div>
             <div class="bottom-caption">
-                <span>...Row from Belfast to Rome</span>
+                <span>{title.bottomTitle}</span>
             </div>
-                <Grid sx={{ flexGrow: 1 }} container spacing={0}>
+                <Grid sx={{ flexGrow: 1 }} container spacing={0} style={{ padding: 40 }}>
                     {pages.map(page =>
                         <React.Fragment>
                             {page.isCard && (
-                                <Grid key={page.title} item xs={6} style={{ paddingLeft: 40, paddingTop:40, paddingRight:40 }}>
+                                <Grid key={page.title} item xs={6} style={{ paddingLeft: 65, paddingTop:50, paddingRight:65, justifyContent: 'center' }}>
                                     <InfoCard card={page} />
                                 </Grid>
                             )}

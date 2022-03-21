@@ -6,7 +6,7 @@
     margin-top: -80px;
 
     /* Set a specific height */
-    min-height: 700px;
+    min-height: 800px;
     width:100%;
   
     /* Create the parallax scrolling effect */
@@ -18,22 +18,22 @@
 
   .bottom-caption {
     position: absolute;
-    right: 15%;
-    top: 40%;
+    right: 1%;
+    top: 45%;
     width: 100%;
     text-align: right;
-    font-size: 22px;
+    font-size: 28px;
     font-family: Montserrat;
     color: rgb(255, 255, 255);
 }
 
 .top-caption {
     position: absolute;
-    right: 48%;
+    right: 60%;
     top: 12%;
-    width: 50%;
+    width: 38%;
     text-align: left;
-    font-size: 22px;
+    font-size: 28px;
     font-family: Montserrat;
     color: rgb(255, 255, 255);
 }
