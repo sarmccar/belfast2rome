@@ -8,6 +8,7 @@ import rannoch from '../images/team/rannoch.jpg';
 import InternalBoat from '../images/boat_internal.png';
 import route1 from '../images/route1.png';
 import route2 from '../images/route2.jpg';
+import sponsor from '../images/sponsors/forward-emphasis.jpg';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -38,7 +39,7 @@ export default {
     partner: {
         title: 'Our Partners',
         image: partners,
-        profile: "We will work with industry leaders for tourism in Ireland and Itlay. We are also working with vital charities for our Oceans and mental health organisations.",
+        profile: "We are collaborating with industry leaders for tourism in Ireland and Itlay. We are also working with vital charities for our Oceans and mental health organisations.",
         details: [
             {
                 title: 'What industries will we work with?',
@@ -70,19 +71,19 @@ export default {
                 name: 'Rower Two',
                 image: unknownRower,
                 role: 'To Be Announced...',
-                description: 'A 26-year-old investment analyst from Ireland currently living in Toronto, Canada. My endurance journey started with a half Ironman and Ultra marathon in 2018 during my final year at university and progressed to a full Ironman the year after. In October, I will be running the Marathon des Sables - a 250 km self-supported stage race in the Sahara desert. ',
+                description: 'Rower two is also a young adult from Belfast, Ireland. Like Jack, he is into extreme endurance sports and is very excited to be a memeber on this team.',
             },
             {
                 name: `Rower Three`,
                 image: unknownRower,
                 role: 'To Be Announced...',
-                description: 'A 26-year-old investment analyst from Ireland currently living in Toronto, Canada. My endurance journey started with a half Ironman and Ultra marathon in 2018 during my final year at university and progressed to a full Ironman the year after. In October, I will be running the Marathon des Sables - a 250 km self-supported stage race in the Sahara desert. ',
+                description: 'Rower three is again, from Belfast. He has a passion for life and exploring the outdoors. He is a great addition for the team.',
              },
             {
                 name: `Rower Four`,
                 image: unknownRower,
                 role: 'To Be Announced...',
-                description: 'A 26-year-old investment analyst from Ireland currently living in Toronto, Canada. My endurance journey started with a half Ironman and Ultra marathon in 2018 during my final year at university and progressed to a full Ironman the year after. In October, I will be running the Marathon des Sables - a 250 km self-supported stage race in the Sahara desert. ',
+                description: 'All four rowers are young adults from Ireland with an unstoppable drive to acheieve new and great things. ',
             },
         ],
         journey: [
@@ -145,5 +146,14 @@ export default {
                 paragraph: 'With supplies in the hull, the boat is naturally ‘self righting’ and completely watertight, this means that in a storm we can batten down the hatches and safely weather any capsizes.',
             },
         ],
+    },
+    ourSponsors: {
+        title: 'Our Sponsors',
+        tagline: 'The duration of this expedition creates value for sponsors',
+        image: sponsor,
+        profile: "Sponsors will get their logo printed on the boat in a prominent position, this logo will be featured in our social media posts and in news articles and blogs that will document the event. We understand the importance of prominence and will not drown out your logo amid a sea of others, we intend to have a concentrated group of relevant sponsors so we may dedicate the required attention to each.",
+        sponsorDesc0: "Forward Emphasis International is a leader in the Irish Business Process Outsourcing sector and specialises in the delivery of customer contact and complex processing solutions for the Financial Services Industry.",
+        sponsorDesc1: "FEI relocated from Belfast to Inishowen in 2000, establishing its main service centre in Malin Head, transforming a previous Fruit of the Loom factory into what has become of Ireland's most respected and specialised Business Process delivery centres. The business has been operating from this unique location for the last 22 years, supported by a Senior Management Team who boasts over 150 years of BPO & CRM experience; and growing to a staff base of 250 people, providing client support both in their head office in Malin Head and remotely from all over Inishowen and nationwide.",
+        sponsorDesc2: "They see the Expedition as an opportunity to highlight Wellbeing & Adventure within their organisation - encouraging a healthy work/life balance by providing opportunities for staff to participate in outdoor adventure and exercise, including team building activities linked to the Expedition. This will be promoted through many avenues such as their Wellbeing & Social Committee, sharing health & fitness content with employees from the rowing team, joining the rowers on their circumference of Ireland especially as it passes Ireland's most northerly point and the home of Forward Emphasis, and encouraging staff to walk/run different legs of each Expedition.",
     },
 };

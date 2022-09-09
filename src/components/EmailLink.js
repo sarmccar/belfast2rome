@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const EmailLink = ({ mailto, label }) => {
     return (
         <Link
+            style={{ textDecoration: 'none' }}
             to='#'
             onClick={(e) => {
                 window.location.href = mailto;

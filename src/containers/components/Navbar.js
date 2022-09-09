@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 5,
     fontSize: theme.typography.h1,
     "&:hover": {
-      backgroundColor: '#2d3352',
+      backgroundColor: '#bcd0e9',
       color: "white",
       borderRadius: 4,
     },

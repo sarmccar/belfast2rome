@@ -3,9 +3,9 @@ import { Grid, makeStyles, Typography, Divider } from "@material-ui/core";
 import InfoCard from "../../components/InfoCard";
 import "./hero.css";
 import ExternalBoat from "../../images/boat_external.png";
-import guy from '../../images/team/guy_hall.jpg';
-import simon from '../../images/team/Simon-Rowell.png';
-import rannoch from '../../images/team/rannoch.jpg';
+import guy from "../../images/team/guy_hall.jpg";
+import simon from "../../images/team/Simon-Rowell.png";
+import rannoch from "../../images/team/rannoch.jpg";
 import pages from "../../config/pages";
 import title from "../../config/title";
 import { Link } from "react-router-dom";
@@ -103,7 +103,7 @@ const HomeIndex = () => {
           ))}
         </Grid>
         <div>
-        <Divider style={{ width: '100%' }} />
+          <Divider style={{ width: "100%" }} />
           <Grid container spacing={2} className={classes.container}>
             <Grid key="meet-team" item xs={4}>
               <div
@@ -123,35 +123,38 @@ const HomeIndex = () => {
                     Making the Dream a Reality
                   </Typography>
                 </div>
-                <Link to="/Team" className={classes.link} style={{ marginTop: 25 }}>
+                <Link
+                  to="/Team"
+                  className={classes.link}
+                  style={{ marginTop: 25 }}
+                >
                   <Typography className={classes.button}>Learn More</Typography>
                 </Link>
               </div>
             </Grid>
             <Grid key="meet-team" item xs={4}>
-            <div
+              <div
                 style={{
                   display: "flex",
                   flexDirection: "row",
                   alignContent: "right",
                 }}
               >
-            <img
-                            alt="guy-team"
-                            src={guy}
-                            className={classes.imageStyle} />
-                                        <img
-                            alt="simon-team"
-                            src={simon}
-                            className={classes.imageStyle} />
-                                        <img
-                            alt="rannoch-team"
-                            src={rannoch}
-                            className={classes.imageStyle} />
-            </div>
+                <img alt="guy-team" src={guy} className={classes.imageStyle} />
+                <img
+                  alt="simon-team"
+                  src={simon}
+                  className={classes.imageStyle}
+                />
+                <img
+                  alt="rannoch-team"
+                  src={rannoch}
+                  className={classes.imageStyle}
+                />
+              </div>
             </Grid>
           </Grid>
-          <Divider style={{ width: '100%' }} />
+          <Divider style={{ width: "100%" }} />
         </div>
         <Grid container spacing={2} className={classes.container}>
           <Grid item xs={12} className={classes.centerAlignment}>

@@ -1,5 +1,5 @@
-import { Typography, Grid } from "@material-ui/core";
-import { makeStyles, Divider } from "@material-ui/core";
+import { Typography, Grid, Divider } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
 import pageDetails from "../../config/page-details";
 import React from "react";
 
@@ -37,16 +37,17 @@ const useStyles = makeStyles((theme) => ({
   subtitle: {
     fontFamily: 'Montserrat',
     fontStyle: 'normal',
-    fontWeight: 400,
-    fontSize: 20,
+    fontWeight: 300,
+    fontSize: 30,
     color: '#383838',
   },
   quote: {
     fontFamily: 'Montserrat',
     fontStyle: 'normal',
     fontWeight: 600,
-    fontSize: 60,
-    color: '#383838',
+    fontSize: 80,
+    color: '#0E9E61',
+    marginBottom: 20,
   },
 }));
 
@@ -61,16 +62,16 @@ const AboutMeIndex = () => {
       </div>
       <Divider className={classes.backGround}/>
       <Grid container>
-        <Grid item xs={7}>
+        <Grid item xs={8}>
           <div style= {{ padding: 100 }}>
           {/* <Paper className={classes.backGround}> */}
           <Typography className={classes.quote}>"Don't live your life between 4 and 6."</Typography>
-          <Typography className={classes.subtitle} style={{ fontWeight: 200 }}>- Colin O'Brady</Typography>
+          {/* <Typography className={classes.subtitle} style={{ fontWeight: 200 }}>- Colin O'Brady</Typography> */}
             <Typography className={classes.subtitle}>{aboutMe.profile}</Typography>
           {/* </Paper> */}
           </div>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={4}>
           <img
             alt="header-logo"
             src={aboutMe.image}
@@ -78,7 +79,8 @@ const AboutMeIndex = () => {
           />
         </Grid>
       </Grid>
-      <div style={{ marginLeft: 100, marginRight: 100, marginBottom: 100, marginTop: 100 }}>
+      <div style={{ marginLeft: 100, marginRight: 100, marginBottom: 150, marginTop: 100 }}>
+        <Divider style={{ marginBottom: 100 }} />
         <Grid container spacing={8}>
           {aboutMe.details.map((item) => (
             <Grid item xs={6} key={item.title} >

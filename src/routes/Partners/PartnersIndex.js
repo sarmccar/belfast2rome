@@ -37,8 +37,8 @@ const useStyles = makeStyles((theme) => ({
   subtitle: {
     fontFamily: 'Montserrat',
     fontStyle: 'normal',
-    fontWeight: 400,
-    fontSize: 20,
+    fontWeight: 300,
+    fontSize: 30,
     color: '#383838',
   },
   quote: {
@@ -46,7 +46,8 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: 'normal',
     fontWeight: 600,
     fontSize: 60,
-    color: '#383838',
+    color: '#2d3353',
+    marginBottom: 20,
   },
 }));
 
@@ -61,16 +62,16 @@ const PartnerIndex = () => {
       </div>
       <Divider className={classes.backGround}/>
       <Grid container>
-        <Grid item xs={7}>
+        <Grid item xs={8}>
         <div style= {{ padding: 100 }}>
           {/* <Paper className={classes.backGround}> */}
            <Typography className={classes.quote}>"The greatest sin is to do nothing because you can only do a little."</Typography>
-           <Typography className={classes.subtitle} style={{ fontWeight: 200 }}>- Edmund Burke</Typography>
+           {/* <Typography className={classes.subtitle} style={{ fontWeight: 200 }}>- Edmund Burke</Typography> */}
             <Typography className={classes.subtitle}>{partner.profile}</Typography>
           {/* </Paper> */}
           </div>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={4}>
           <img
             alt="header-logo"
             src={partner.image}
@@ -79,6 +80,7 @@ const PartnerIndex = () => {
         </Grid>
       </Grid>
       <div style={{ marginLeft: 100, marginRight: 100, marginBottom: 100, marginTop: 100 }}>
+      <Divider style={{ marginBottom: 100 }} />
         <Grid container spacing={8}>
           {partner.details.map((item) => (
             <Grid item xs={6} key={item.title} >
