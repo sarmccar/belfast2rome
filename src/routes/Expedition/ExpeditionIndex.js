@@ -101,15 +101,17 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: 400,
     fontSize: 20,
-    color: "white",
+    color: "#4b4b4b",
   },
   imageStyle: {
     height: "100%",
+    maxWidth: 663,
   },
   lightBackground: {
     background: "#f3f3f3",
     borderRadius: 44,
     width: "100%",
+    height: '100%',
   },
 }));
 
@@ -121,25 +123,15 @@ const ExpeditionIndex = () => {
     <React.Fragment>
       <div
         style={{
-          marginLeft: 100,
-          marginRight: 100,
-          marginBottom: 25,
+          margin: 100,
           marginTop: 25,
         }}
       >
         <Typography className={classes.title}>{expedition.title}</Typography>
-        <Grid container spacing={10}>
+        <Grid container spacing={4}>
           <Grid item xs={12} style={{ marginTop: 80 }}>
             <Paper className={classes.lightBackground}>
               <Grid container spacing={4}>
-                <Grid item xs={12}>
-                  <Typography
-                    className={classes.sectionTitle}
-                    style={{ marginLeft: 50 }}
-                  >
-                    Where it All Begins
-                  </Typography>
-                </Grid>
                 <Grid item xs={12}>
                   <Typography
                     className={classes.nameDetails}
@@ -160,7 +152,45 @@ const ExpeditionIndex = () => {
           </Grid>
         </Grid>
       </div>
-      <Grid container spacing={2} className={classes.container}>
+      <Divider />
+      <div style={{ margin: 100 }}>
+      {expedition.stages.map((stage) => (
+        <Grid container spacing={4} style={{ marginBottom: 50 }}>
+          <Grid item xs={7}>
+            <Paper className={classes.lightBackground}>
+              <div style={{ marginLeft: 50 }}>
+                <Typography className={classes.stageTitle}>
+                  {stage.stage}
+                </Typography>
+                <Typography
+                  className={classes.subtitle}
+                  style={{ fontWeight: 200, color: '#c4c3c3' }}
+                >
+                  {stage.leg}
+                </Typography>
+              </div>
+              <Divider />
+              <div style={{ marginLeft: 50, marginTop: 25, width: "80%" }}>
+                <Typography
+                  className={classes.subtitle}
+                  style={{ lineHeight: 2 }}
+                >
+                  {stage.description}
+                </Typography>
+              </div>
+            </Paper>
+          </Grid>
+          <Grid item xs={5} style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <img
+              alt="header-logo"
+              src={stage.image}
+              className={classes.imageStyle}
+            />
+          </Grid>
+        </Grid>
+      ))}
+      </div>
+      <Grid container className={classes.container}>
         <Grid item xs={12} className={classes.centerAlignment}>
           <img
             alt="get-involved"
@@ -190,43 +220,6 @@ const ExpeditionIndex = () => {
             </Grid>
           ))}
         </Grid>
-      </div>
-      <div style={{ marginBottom: 200 }}>
-      {expedition.stages.map((stage) => (
-        <Grid container style={{ marginBottom: 50 }}>
-          <Grid item xs={8}>
-            <Paper className={classes.backGround}>
-              <div style={{ marginLeft: 50 }}>
-                <Typography className={classes.stageTitle}>
-                  {stage.stage}
-                </Typography>
-                <Typography
-                  className={classes.subtitle}
-                  style={{ fontWeight: 200 }}
-                >
-                  {stage.leg}
-                </Typography>
-              </div>
-              <Divider style={{ backgroundColor: "white" }} />
-              <div style={{ marginLeft: 50, marginTop: 25, width: "80%" }}>
-                <Typography
-                  className={classes.subtitle}
-                  style={{ lineHeight: 4 }}
-                >
-                  {stage.description}
-                </Typography>
-              </div>
-            </Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <img
-              alt="header-logo"
-              src={stage.image}
-              className={classes.imageStyle}
-            />
-          </Grid>
-        </Grid>
-      ))}
       </div>
     </React.Fragment>
   );

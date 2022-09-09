@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   imageStyle: {
     height: 600,
+    width: '100%',
   },
   sectionTitle: {
     fontFamily: 'Montserrat',

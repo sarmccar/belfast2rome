@@ -84,8 +84,8 @@ const SponsorsIndex = () => {
   return (
     <React.Fragment>
       <div className="parallax-container">
-        <div className="parallax" />
-        <div className="top-caption">
+        <div className="parallaxSpons" />
+        <div className="top-captionSpons">
           <span>{sponsors.tagline}</span>
         </div>
       </div>

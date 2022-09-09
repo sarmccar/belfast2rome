@@ -1,4 +1,4 @@
-.parallax {
+.parallaxSpons {
     /* The image used */
     background-image: url("../../images/ireland_sponsors.jpg");
 
@@ -16,7 +16,7 @@
     background-size: cover;
   }
 
-  .bottom-caption {
+  .bottom-captionSpons {
     position: absolute;
     right: 1%;
     top: 100%;
@@ -27,7 +27,7 @@
     color: rgb(255, 255, 255);
 }
 
-.top-caption {
+.top-captionSpons {
     position: absolute;
     right: 55%;
     top: 25%;
@@ -38,7 +38,7 @@
     color: rgb(255, 255, 255);
 }
 
-.top-logo {
+.top-logoSpons {
   position: absolute;
   right: 36%;
   top: 69%;

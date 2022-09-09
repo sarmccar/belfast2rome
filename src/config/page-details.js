@@ -6,8 +6,9 @@ import simon from '../images/team/Simon-Rowell.png';
 import guy from '../images/team/guy_hall.jpg';
 import rannoch from '../images/team/rannoch.jpg';
 import InternalBoat from '../images/boat_internal.png';
-import route1 from '../images/route1.png';
-import route2 from '../images/route2.jpg';
+import route2 from '../images/route1.png';
+import route1 from '../images/route2.jpg';
+import route3 from '../images/stage3.png';
 import sponsor from '../images/sponsors/forward-emphasis.jpg';
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -26,14 +27,14 @@ export default {
                 title: 'Why Am I Doing This?',
                 paragraph: 'I have always had a passion for adventure and find myself captivated by feats of endurance that I have witnessed in documentaries and read about in books. I view ocean rowing as the ultimate test of endurance and in my opinion, there is no greater prize than doing something that had never been done before. ',
             },
-            {
-                title: 'Where Did I Get My Inspiration?',
-                paragraph: 'Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.',
-            },
-            {
-                title: 'Why Should You Care?',
-                paragraph: 'Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.',
-            },
+            // {
+            //     title: 'Where Did I Get My Inspiration?',
+            //     paragraph: 'Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.',
+            // },
+            // {
+            //     title: 'Why Should You Care?',
+            //     paragraph: 'Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.',
+            // },
         ],
     },
     partner: {
@@ -71,19 +72,19 @@ export default {
                 name: 'Rower Two',
                 image: unknownRower,
                 role: 'To Be Announced...',
-                description: 'Rower two is also a young adult from Belfast, Ireland. Like Jack, he is into extreme endurance sports and is very excited to be a memeber on this team.',
+                description: '',
             },
             {
                 name: `Rower Three`,
                 image: unknownRower,
                 role: 'To Be Announced...',
-                description: 'Rower three is again, from Belfast. He has a passion for life and exploring the outdoors. He is a great addition for the team.',
+                description: '',
              },
             {
                 name: `Rower Four`,
                 image: unknownRower,
                 role: 'To Be Announced...',
-                description: 'All four rowers are young adults from Ireland with an unstoppable drive to acheieve new and great things. ',
+                description: '',
             },
         ],
         journey: [
@@ -126,6 +127,12 @@ export default {
                 leg: 'The Cape',
                 image: route2,
                 description: 'The route can be characterized by three broad stages, each with their own unique challenges. Stage one from Ireland to the top of Biscay will require a high-pressure system emanating from the top of the Irish sea to assist the boat down to Biscay. This typically occurs three times every summer and is highlighted below in red.'
+            },
+            {
+                stage: 'Stage Three',
+                leg: 'The Gibraltar strait to Rome',
+                image: route3,
+                description: 'The Gibraltar Strait will require an opportunistic weather window to avoid the wrath of the famous levanter wind which blows out of the Med. Once we secure a solid window, we will make a strong push to get through the strait before the levant blows again. Our journey through the Mediterranean will be broken into smaller surges making the most of the weather windows. The weather in the Med is sporadic and often unfavorable. Our course will see us hug the coast before shooting between Sardinia and Corsica onto Rome.'
             },
         ],
         details: [
