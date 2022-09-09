@@ -1,4 +1,4 @@
-import { Typography, Grid, Paper } from "@material-ui/core";
+import { Typography, Grid } from "@material-ui/core";
 import { makeStyles, Divider } from "@material-ui/core";
 import pageDetails from "../../config/page-details";
 import React from "react";

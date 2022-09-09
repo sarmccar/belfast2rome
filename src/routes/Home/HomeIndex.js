@@ -2,7 +2,6 @@ import React from "react";
 import { Grid, makeStyles, Typography, Divider } from "@material-ui/core";
 import InfoCard from "../../components/InfoCard";
 import "./hero.css";
-import logo from "../../images/Logo_coloured.png";
 import ExternalBoat from "../../images/boat_external.png";
 import guy from '../../images/team/guy_hall.jpg';
 import simon from '../../images/team/Simon-Rowell.png';
