@@ -5,7 +5,7 @@ import React from "react";
 
 const useStyles = makeStyles((theme) => ({
   title: {
-    color: "#0E9E61",
+    color: "#2D3353",
     fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: 600,
@@ -13,9 +13,9 @@ const useStyles = makeStyles((theme) => ({
   },
   backGround: {
     width: "100%",
-    background: 'linear-gradient(270deg, #0E9E61 42.03%, rgba(14, 158, 97, 0.179447) 90.19%, rgba(14, 158, 97, 0) 102.74%)',
-    filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
-    // boxShadow: "none",
+    background: 'linear-gradient(270deg, #2D3353 26.77%, rgba(72, 77, 104, 0.896348) 56.77%, rgba(233, 233, 233, 0.268339) 99.97%, rgba(219, 219, 219, 0) 99.98%)',
+    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+    boxShadow: "none",
   },
   imageStyle: {
     height: 600,
@@ -50,37 +50,37 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const AboutMeIndex = () => {
+const PartnerIndex = () => {
   const classes = useStyles();
-  const aboutMe = pageDetails.aboutMe;
+  const partner = pageDetails.partner;
 
   return (
     <React.Fragment>
       <div style={{ marginLeft: 100, marginRight: 100, marginBottom: 25, marginTop: 25 }}>
-        <Typography className={classes.title}>{aboutMe.title}</Typography>
+        <Typography className={classes.title}>{partner.title}</Typography>
       </div>
       <Divider className={classes.backGround}/>
       <Grid container>
         <Grid item xs={7}>
-          <div style= {{ padding: 100 }}>
+        <div style= {{ padding: 100 }}>
           {/* <Paper className={classes.backGround}> */}
-          <Typography className={classes.quote}>"Don't live your life between 4 and 6."</Typography>
-          <Typography className={classes.subtitle} style={{ fontWeight: 200 }}>- Colin O'Brady</Typography>
-            <Typography className={classes.subtitle}>{aboutMe.profile}</Typography>
+           <Typography className={classes.quote}>"The greatest sin is to do nothing because you can only do a little."</Typography>
+           <Typography className={classes.subtitle} style={{ fontWeight: 200 }}>- Edmund Burke</Typography>
+            <Typography className={classes.subtitle}>{partner.profile}</Typography>
           {/* </Paper> */}
           </div>
         </Grid>
         <Grid item xs={5}>
           <img
             alt="header-logo"
-            src={aboutMe.image}
+            src={partner.image}
             className={classes.imageStyle}
           />
         </Grid>
       </Grid>
       <div style={{ marginLeft: 100, marginRight: 100, marginBottom: 100, marginTop: 100 }}>
         <Grid container spacing={8}>
-          {aboutMe.details.map((item) => (
+          {partner.details.map((item) => (
             <Grid item xs={6} key={item.title} >
               <Typography className={classes.sectionTitle}>{item.title}</Typography>
               <Typography className={classes.sectionDetail}>{item.paragraph}</Typography>
@@ -92,4 +92,4 @@ const AboutMeIndex = () => {
   );
 };
 
-export default AboutMeIndex;
+export default PartnerIndex;

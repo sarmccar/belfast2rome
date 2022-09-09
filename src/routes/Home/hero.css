@@ -6,7 +6,7 @@
     margin-top: -80px;
 
     /* Set a specific height */
-    min-height: 800px;
+    min-height: 100vh;
     width:100%;
   
     /* Create the parallax scrolling effect */
@@ -22,8 +22,8 @@
     top: 45%;
     width: 100%;
     text-align: right;
-    font-size: 28px;
-    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
     color: rgb(255, 255, 255);
 }
 
@@ -33,7 +33,15 @@
     top: 12%;
     width: 38%;
     text-align: left;
-    font-size: 28px;
-    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
     color: rgb(255, 255, 255);
+}
+
+.top-logo {
+  position: absolute;
+  right: 36%;
+  top: 69%;
+  width: 20%;
+  height: 20%;
 }

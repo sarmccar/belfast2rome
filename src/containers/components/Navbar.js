@@ -6,7 +6,7 @@ import pages from '../../config/pages';
 
 const useStyles = makeStyles((theme) => ({
   navLinks: {
-    marginLeft: theme.spacing(2),
+    margin: theme.spacing(2),
     display: "flex",
     justifyContent: "flex-end", 
   },
@@ -18,11 +18,12 @@ const useStyles = makeStyles((theme) => ({
   linkText: {
     textDecoration: "none",
     color: "#2D3353",
+    padding: 5,
     fontSize: theme.typography.h1,
-    marginLeft: theme.spacing(1),
     "&:hover": {
-      color: "yellow",
-      borderBottom: "1px solid white",
+      backgroundColor: '#2d3352',
+      color: "white",
+      borderRadius: 4,
     },
   },
 }));

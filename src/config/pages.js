@@ -1,6 +1,7 @@
 import jack from '../images/jack1.jpg';
 import boatInternal from '../images/boat_internal.png';
-import route1 from '../images/route1.png';
+import sponsors from '../images/ireland_sponsors.jpg';
+import partners from '../images/partners_website.PNG';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
@@ -16,7 +17,7 @@ export default [
         title: 'The Expedition',
         link: '/Expedition',
         description: 'Rowing for Ireland',
-        image: route1,
+        image: boatInternal,
         colour: '#D02C37',
         isCard: true,
     },
@@ -29,18 +30,18 @@ export default [
     },
     {
         title: 'Our Partners',
-        link: '/Our Partners',
+        link: '/Partners',
         description: 'The Industries and Charities',
-        image: 'Logo_coloured.png',
-        colour: '#FF8640',
+        image: partners,
+        colour: '#2D3353',
         isCard: true,
     },
     {
         title: 'Our Sponsors',
         link: '/Sponsors',
         description: 'Helping to Make it Happen',
-        image: boatInternal,
-        colour: '#2D3353',
+        image: sponsors,
+        colour: '#FF8640',
         isCard: true,
     },
 ];

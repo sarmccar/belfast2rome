@@ -5,8 +5,8 @@ import { Card, CardActions, CardContent, CardMedia, Typography, makeStyles } fro
 
 const useStyles = (makeStyles((theme) => ({
     cardForm: {
-        borderRadius: 56,
-        minHeight: 600,
+        borderRadius: 10,
+        height: '100%',
     },
     typography: {
         color: 'white',
@@ -38,10 +38,10 @@ const InfoCard = ({ card }) => {
 
     return (
         <React.Fragment>
-            <Card sx={{ maxWidth: 145 }} className={classes.cardForm}  elevation={20}>
+            <Card sx={4} className={classes.cardForm}  elevation={20}>
                 <CardMedia
                     component="img"
-                    height="550"
+                    height="75%"
                     image={card.image}
                     alt={card.title}
                 />
@@ -64,6 +64,6 @@ const InfoCard = ({ card }) => {
 }
 
 InfoCard.propTypes ={
-    card: PropTypes.array,
+    card: PropTypes.object,
 };
 export default InfoCard
