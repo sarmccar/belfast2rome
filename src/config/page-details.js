@@ -9,6 +9,7 @@ import InternalBoat from '../images/boat_internal.png';
 import route1 from '../images/route1.png';
 import route2 from '../images/route2.jpg';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     aboutMe: {
         title: 'About Me',
