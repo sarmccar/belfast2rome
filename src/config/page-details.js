@@ -105,7 +105,7 @@ export default {
             {
                 name: 'Guy Hall',
                 image: guy,
-                role: 'Socual Media Manager',
+                role: 'Social Media Manager',
                 description: 'Guy manages the social media and content for Ting Mobile at Tucows and is an avid outdoorsman. We recognize the importance of a profile in raising awareness for our sponsors and our cause, and Guy will be documenting the entire journey.',
             },  
         ]
@@ -160,7 +160,7 @@ export default {
         image: sponsor,
         profile: "Sponsors will get their logo printed on the boat in a prominent position, this logo will be featured in our social media posts and in news articles and blogs that will document the event. We understand the importance of prominence and will not drown out your logo amid a sea of others, we intend to have a concentrated group of relevant sponsors so we may dedicate the required attention to each.",
         sponsorDesc0: "Forward Emphasis International is a leader in the Irish Business Process Outsourcing sector and specialises in the delivery of customer contact and complex processing solutions for the Financial Services Industry.",
-        sponsorDesc1: "FEI relocated from Belfast to Inishowen in 2000, establishing its main service centre in Malin Head, transforming a previous Fruit of the Loom factory into what has become of Ireland's most respected and specialised Business Process delivery centres. The business has been operating from this unique location for the last 22 years, supported by a Senior Management Team who boasts over 150 years of BPO & CRM experience; and growing to a staff base of 250 people, providing client support both in their head office in Malin Head and remotely from all over Inishowen and nationwide.",
+        sponsorDesc1: "FEI relocated from Belfast to Inishowen in 2000, establishing its main service centre in Malin Head, transforming a previous Fruit of the Loom factory into what has become one of Ireland's most respected and specialised Business Process delivery centres. The business has been operating from this unique location for the last 22 years, supported by a Senior Management Team which boasts over 150 years of BPO & CRM experience; and growing to a staff base of 250 people, providing client support both in their head office in Malin Head and remotely from all over Inishowen and nationwide.",
         sponsorDesc2: "They see the Expedition as an opportunity to highlight Wellbeing & Adventure within their organisation - encouraging a healthy work/life balance by providing opportunities for staff to participate in outdoor adventure and exercise, including team building activities linked to the Expedition. This will be promoted through many avenues such as their Wellbeing & Social Committee, sharing health & fitness content with employees from the rowing team, joining the rowers on their circumference of Ireland especially as it passes Ireland's most northerly point and the home of Forward Emphasis, and encouraging staff to walk/run different legs of each Expedition.",
     },
 };
