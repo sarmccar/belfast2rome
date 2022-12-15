@@ -5,7 +5,6 @@ import { Card, CardActions, CardContent, CardMedia, Typography, makeStyles } fro
 
 const useStyles = (makeStyles((theme) => ({
     cardForm: {
-        borderRadius: 10,
         height: '100%',
     },
     typography: {
@@ -21,8 +20,8 @@ const useStyles = (makeStyles((theme) => ({
     link: {
         backgroundColor: 'white',
         borderRadius: 4,
-        paddingLeft: 20,
-        paddingRight: 20,
+        paddingLeft: 10,
+        paddingRight: 10,
         paddingTop: 5,
         paddingBottom: 5,
         textDecoration: 'none',
@@ -46,18 +45,20 @@ const InfoCard = ({ card }) => {
                     alt={card.title}
                 />
                 <CardContent style={{ backgroundColor: card.colour }}>
-                    <Typography gutterBottom variant="h5" className={classes.typography}>
-                        {card.title}
-                    </Typography>
+                <CardActions className={classes.actions} style={{ backgroundColor: card.colour }}>
+                    <Link to={card.link} className={classes.link}>
+                        <Typography className={classes.button}>{card.title}</Typography>
+                    </Link>
+                </CardActions>
                     <Typography variant="body2" className={classes.typography}>
                         {card.description}
                     </Typography>
                 </CardContent>
-                <CardActions className={classes.actions} style={{ backgroundColor: card.colour }}>
+                {/* <CardActions className={classes.actions} style={{ backgroundColor: card.colour }}>
                     <Link to={card.link} className={classes.link}>
                         <Typography className={classes.button}>Learn More</Typography>
                     </Link>
-                </CardActions>
+                </CardActions> */}
             </Card>
         </React.Fragment>
     )

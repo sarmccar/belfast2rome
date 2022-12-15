@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, makeStyles, Typography, Divider } from "@material-ui/core";
+import { Tooltip } from "@material-ui/core";
 import InfoCard from "../../components/InfoCard";
 import "./hero.css";
 import ExternalBoat from "../../images/boat_external.png";
@@ -8,9 +9,10 @@ import simon from "../../images/team/Simon-Rowell.png";
 import rannoch from "../../images/team/rannoch.jpg";
 import pages from "../../config/pages";
 import title from "../../config/title";
+import useDeviceDetect from '../../hooks/useDeviceDetect';
 import { Link } from "react-router-dom";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((isDesktop) => ({
   gridItem: {
     maxHeight: 600,
   },
@@ -49,11 +51,9 @@ const useStyles = makeStyles((theme) => ({
   },
   largeImage: {
     boxShadow: "5px 5px 4px 0px #0000004D",
-    borderRadius: 10,
-    width: 1202,
-    height: 680,
-    left: 89,
-    top: 3411,
+    borderRadius: 10, 
+    height: '90%',
+    width: '80%',
     filter: "drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.3))",
   },
   centerAlignment: {
@@ -71,11 +71,27 @@ const useStyles = makeStyles((theme) => ({
     height: 200,
     width: 200,
   },
+  mobileImageStyle: {
+    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+    borderRadius: 200,
+    marginBottom: 15,
+    height: 200,
+    width: 200,
+  },
+  bubbleImage: {
+      transition: 'transform .2s',
+      '& .hover': {
+        transform: 'scale(1.5)',
+      },
+      display: isDesktop ? "flex" : '',
+      flexDirection: "row",
+      alignContent: "right",
+  },
 }));
 
 const HomeIndex = () => {
-  const classes = useStyles();
-
+  const { isDesktop } = useDeviceDetect();
+  const classes = useStyles(isDesktop);
   return (
     <React.Fragment>
       <div className="parallax-container">
@@ -91,11 +107,11 @@ const HomeIndex = () => {
         </div> */}
       </div>
       <div style={{ marginLeft: 100, marginRight: 100 }}>
-        <Grid container spacing={4} className={classes.container}>
+        <Grid container spacing={6} className={classes.container}>
           {pages.map((page) => (
             <React.Fragment key={`${page.title}-div`}>
               {page.isCard && (
-                <Grid className={classes.gridItem} key={page.title} item xs={6}>
+                <Grid className={classes.gridItem} key={page.title} item xs={isDesktop ? 3 : 12}>
                   <InfoCard card={page} />
                 </Grid>
               )}
@@ -105,7 +121,7 @@ const HomeIndex = () => {
         <div>
           <Divider style={{ width: "100%" }} />
           <Grid container spacing={2} className={classes.container}>
-            <Grid key="meet-team" item xs={4}>
+            <Grid key="meet-team-header" item xs={4}>
               <div
                 style={{
                   display: "flex",
@@ -133,24 +149,30 @@ const HomeIndex = () => {
               </div>
             </Grid>
             <Grid key="meet-team" item xs={4}>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  alignContent: "right",
-                }}
-              >
-                <img alt="guy-team" src={guy} className={classes.imageStyle} />
+              <div className={classes.bubbleImage}>
+                <div className="zoom">
+                <Tooltip arrow disableFocusListener title="Gull Hay">
+                <img alt="guy-team" src={guy} className={isDesktop ? classes.imageStyle : classes.mobileImageStyle} />
+                </Tooltip>
+                </div>
+                <div className="zoom">
+                <Tooltip arrow disableFocusListener title="Gull Hay">
                 <img
                   alt="simon-team"
                   src={simon}
-                  className={classes.imageStyle}
+                  className={isDesktop ? classes.imageStyle : classes.mobileImageStyle}
                 />
+                 </Tooltip>
+                </div>
+                <div className="zoom">
+                <Tooltip arrow disableFocusListener title="Gull Hay">
                 <img
                   alt="rannoch-team"
                   src={rannoch}
-                  className={classes.imageStyle}
+                  className={isDesktop ? classes.imageStyle : classes.mobileImageStyle}
                 />
+                 </Tooltip>
+                </div>
               </div>
             </Grid>
           </Grid>

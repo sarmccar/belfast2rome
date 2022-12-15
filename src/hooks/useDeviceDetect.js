@@ -1,0 +1,7 @@
+import useMediaQuery from '@mui/material/useMediaQuery';
+
+export default function useDeviceDetect() {
+  const isDesktop = useMediaQuery('(min-width:720px)');
+
+  return { isDesktop };
+}
