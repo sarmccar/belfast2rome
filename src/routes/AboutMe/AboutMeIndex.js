@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Montserrat",
     fontStyle: "normal",
     fontWeight: 600,
-    fontSize: 40,
+    fontSize: '5vw',
   },
   backGround: {
     width: "100%",
@@ -25,28 +25,28 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Montserrat',
     fontStyle: 'normal',
     fontWeight: 600,
-    fontSize: 30,
+    fontSize: '4vw',
     color: '#373434',
   },
   sectionDetail: {
     fontFamily: 'Montserrat',
     fontStyle: 'normal',
     fontWeight: 400,
-    fontSize: 25,
+    fontSize: '3vw',
     color: '#4b4b4b',
   },
   subtitle: {
     fontFamily: 'Montserrat',
     fontStyle: 'normal',
     fontWeight: 300,
-    fontSize: 30,
+    fontSize: '3vw',
     color: '#383838',
   },
   quote: {
     fontFamily: 'Montserrat',
     fontStyle: 'normal',
     fontWeight: 600,
-    fontSize: 80,
+    fontSize: '4vw',
     color: '#0E9E61',
     marginBottom: 20,
   },
@@ -63,7 +63,7 @@ const AboutMeIndex = () => {
       </div>
       <Divider className={classes.backGround}/>
       <Grid container>
-        <Grid item xs={8}>
+        <Grid item xs={12}>
           <div style= {{ padding: 100 }}>
           {/* <Paper className={classes.backGround}> */}
           <Typography className={classes.quote}>"Don't live your life between 4 and 6."</Typography>
@@ -72,19 +72,12 @@ const AboutMeIndex = () => {
           {/* </Paper> */}
           </div>
         </Grid>
-        <Grid item xs={4}>
-          <img
-            alt="header-logo"
-            src={aboutMe.image}
-            className={classes.imageStyle}
-          />
-        </Grid>
       </Grid>
       <div style={{ marginLeft: 100, marginRight: 100, marginBottom: 150, marginTop: 100 }}>
         <Divider style={{ marginBottom: 100 }} />
         <Grid container spacing={8}>
           {aboutMe.details.map((item) => (
-            <Grid item xs={6} key={item.title} >
+            <Grid item xs={12} sm={6} key={item.title} >
               <Typography className={classes.sectionTitle}>{item.title}</Typography>
               <Typography className={classes.sectionDetail}>{item.paragraph}</Typography>
             </Grid>

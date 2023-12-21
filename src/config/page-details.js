@@ -1,6 +1,8 @@
 import jack from '../images/jack1.jpg';
 import partners from '../images/partners_website.PNG';
-import jackHead from '../images/team/jack_head.jpg';
+import jackHead from '../images/team/jack_I2I.jpeg';
+import aidanHead from '../images/team/aidan_I2I.jpeg'
+import ciaranHead from '../images/team/ciaran_I2I.jpeg'
 import unknownRower from '../images/team/unknown_rower.png';
 import simon from '../images/team/Simon-Rowell.png';
 import guy from '../images/team/guy_hall.jpg';
@@ -69,15 +71,15 @@ export default {
                 description: 'A 26-year-old investment analyst from Ireland currently living in Toronto, Canada. My endurance journey started with a half Ironman and Ultra marathon in 2018 during my final year at university and progressed to a full Ironman the year after. In April 2023, I will be running the Marathon des Sables - a 250 km self-supported stage race in the Sahara desert. ',
             },
             {
-                name: 'Rower Two',
-                image: unknownRower,
-                role: 'To Be Announced...',
+                name: `Aidan O'Reilly`,
+                image: aidanHead,
+                role: 'Rower Two',
                 description: '',
             },
             {
-                name: `Rower Three`,
-                image: unknownRower,
-                role: 'To Be Announced...',
+                name: `Ciarán Breslin`,
+                image: ciaranHead,
+                role: 'Rower Three',
                 description: '',
              },
             {
@@ -145,7 +147,7 @@ export default {
                 paragraph: 'The Boat is simple in its design, but it is robust. All the navigational equipment will be inside the rear cabin, powered by a singular solar panel on the roof.',
             },
             {
-                title: 'What is boat’s design?',
+                title: 'What is the boat’s design?',
                 paragraph: 'The boat is made of carbon fiber and has dimensions of 28 x 5.7 x 5.1 feet.',
             },
             {

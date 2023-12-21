@@ -1,41 +1,71 @@
 .parallax {
-    /* The image used */
-    background-image: url("../../images/HeroPic.jpg");
+  /* The image used */
+  background-image: url("../../images/HeroPic.jpg");
 
-    /* Overlay navbar on hero image */
-    margin-top: -80px;
+  /* Overlay navbar on hero image */
+  margin-top: -80px;
 
-    /* Set a specific height */
-    min-height: 100vh;
-    width:100%;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  /* Set a specific height */
+  min-height: 100vh;
+  width: 100%;
 
-  .bottom-caption {
-    position: absolute;
-    right: 1%;
-    top: 45%;
-    width: 100%;
-    text-align: right;
-    font-size: 30px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottom-caption {
+  position: absolute;
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.694);
+  right: 1%;
+  top: 45%;
+  width: 100%;
+  text-align: right;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Montserrat';
+  color: rgb(255, 255, 255);
 }
 
 .top-caption {
-    position: absolute;
-    right: 60%;
-    top: 12%;
-    width: 38%;
-    text-align: left;
-    font-size: 30px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
+  position: absolute;
+  right: 60%;
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.694);
+  top: 12%;
+  width: 38%;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Montserrat';
+  color: rgb(255, 255, 255);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../images/HeroPic.jpg");
+  height: 100vh;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+.text {
+  font-size: 1.4rem;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'Montserrat';
+  position: relative;
+  bottom: 20%;
 }
 
 .top-logo {
@@ -51,10 +81,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform .2s; /* Animation */
+  transition: transform .2s;
+  /* Animation */
   margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

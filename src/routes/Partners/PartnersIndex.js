@@ -63,7 +63,7 @@ const PartnerIndex = () => {
       </div>
       <Divider className={classes.backGround}/>
       <Grid container>
-        <Grid item xs={8}>
+        <Grid item xs={12}>
         <div style= {{ padding: 100 }}>
           {/* <Paper className={classes.backGround}> */}
            <Typography className={classes.quote}>"The greatest sin is to do nothing because you can only do a little."</Typography>
@@ -71,13 +71,6 @@ const PartnerIndex = () => {
             <Typography className={classes.subtitle}>{partner.profile}</Typography>
           {/* </Paper> */}
           </div>
-        </Grid>
-        <Grid item xs={4}>
-          <img
-            alt="header-logo"
-            src={partner.image}
-            className={classes.imageStyle}
-          />
         </Grid>
       </Grid>
       <div style={{ marginLeft: 100, marginRight: 100, marginBottom: 100, marginTop: 100 }}>
